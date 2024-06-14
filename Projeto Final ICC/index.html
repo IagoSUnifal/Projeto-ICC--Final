@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Git e GitHub - Tutorial</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <ul>
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="audio.html">Áudio</a></li>
+                    <li><a href="video.html">Comandos Git (Vídeo)</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section id="hero">
+            <div class="container">
+                <img src="img/logo.png" alt="Git Logo" class="hero-image">
+                <h1>Bem-vindo ao Tutorial de Git e GitHub</h1>
+                <p>Aprenda a usar Git e GitHub de forma eficiente e colaborativa.</p>
+                <a href="#inicio" class="btn">Comece agora</a>
+            </div>
+        </section>
+
+        <section id="inicio" class="card">
+            <div class="container">
+                <h2>O que é Git e GitHub?</h2>
+                <p><b>Git</b> é um sistema de controle de versões distribuído e amplamente utilizado para rastrear mudanças em arquivos durante o desenvolvimento de software. Ele permite que vários desenvolvedores trabalhem simultaneamente em projetos, gerenciando suas modificações de maneira eficiente. O Git mantém um histórico detalhado das alterações, facilitando o trabalho colaborativo e a revisão de código.</p>
+                <p><b>GitHub</b> é uma plataforma de hospedagem de código-fonte que utiliza o Git como seu sistema de controle de versão. Além de armazenar projetos, o GitHub oferece ferramentas poderosas para colaboração, como controle de versão, gerenciamento de problemas, solicitações de pull (pull requests) e integração contínua. Ele se tornou essencial para desenvolvedores que buscam compartilhar e colaborar em projetos de software de forma eficaz.</p>
+                
+                <h3>Como Usar Git e GitHub</h3>
+                
+                <h4>1. Configuração do Git</h4>
+                <p>Primeiro, você precisa instalar o Git no seu computador. Você pode baixá-lo e seguir as instruções de instalação do site oficial do Git: <a href="https://git-scm.com/">https://git-scm.com</a>. Depois de instalar o Git, é importante configurar o seu nome de usuário e endereço de e-mail, que serão associados aos seus commits.</p>
+    
+                <h4>2. Configuração do GitHub</h4>
+                <p>Para começar a usar o GitHub, siga os passos abaixo:</p>
+                <ol>
+                    <li>Crie uma conta no GitHub em <a href="https://github.com/">https://github.com/</a> se ainda não tiver uma.</li>
+                    <li>Para criar um repositório, logue na sua conta do GitHub e clique em "New" no canto superior direito da página.</li>
+                    <li>Preencha o nome do repositório, descrição (opcional), e escolha se quer um repositório público ou privado.</li>
+                    <li>Clique em "Create repository".</li>
+                    <li>Você está pronto para compartilhar seus códigos com essa incrível comunidade.</li>
+                </ol>
+
+                <h3>Comandos Git - Uso na Prática</h3>
+                
+                <table class="git-table">
+                    <thead>
+                        <tr>
+                            <th>Comando</th>
+                            <th>Descrição</th>
+                            <th>Exemplo</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>git init</td>
+                            <td>Inicializa um novo repositório Git.</td>
+                            <td><code>git init</code></td>
+                        </tr>
+                        <tr>
+                            <td>git clone</td>
+                            <td>Clona um repositório existente.</td>
+                            <td><code>git clone https://github.com/usuario/repo.git</code></td>
+                        </tr>
+                        <tr>
+                            <td>git branch</td>
+                            <td>Cria, lista ou exclui branches.</td>
+                            <td><code>git branch nova-branch</code></td>
+                        </tr>
+                        <tr>
+                            <td>git checkout</td>
+                            <td>Altera para um branch específico.</td>
+                            <td><code>git checkout nova-branch</code></td>
+                        </tr>
+                        <tr>
+                            <td>git status</td>
+                            <td>Exibe o status das alterações.</td>
+                            <td><code>git status</code></td>
+                        </tr>
+                        <tr>
+                            <td>git diff</td>
+                            <td>Mostra as diferenças entre commits.</td>
+                            <td><code>git diff</code></td>
+                        </tr>
+                        <tr>
+                            <td>git add</td>
+                            <td>Adiciona arquivos à área de staging.</td>
+                            <td><code>git add arquivo.txt</code></td>
+                        </tr>
+                        <tr>
+                            <td>git commit</td>
+                            <td>Salva as alterações no repositório.</td>
+                            <td><code>git commit -m "Mensagem do commit"</code></td>
+                        </tr>
+                        <tr>
+                            <td>git push</td>
+                            <td>Envia commits para o repositório remoto.</td>
+                            <td><code>git push origin main</code></td>
+                        </tr>
+                        <tr>
+                            <td>git pull</td>
+                            <td>Atualiza o repositório local com mudanças do repositório remoto.</td>
+                            <td><code>git pull origin main</code></td>
+                        </tr>
+                        <tr>
+                            <td>git revert</td>
+                            <td>Reverte um commit específico.</td>
+                            <td><code>git revert &lt;hash-do-commit&gt;</code></td>
+                        </tr>
+                        <tr>
+                            <td>git merge</td>
+                            <td>Mescla branches.</td>
+                            <td><code>git merge nova-branch</code></td>
+                        </tr>
+                        <tr>
+                            <td>git stash</td>
+                            <td>Armazena alterações temporariamente.</td>
+                            <td><code>git stash</code></td>
+                        </tr>
+                        <tr>
+                            <td>git rm</td>
+                            <td>Remove arquivos do repositório.</td>
+                            <td><code>git rm arquivo.txt</code></td>
+                        </tr>
+                        <tr>
+                            <td>git config</td>
+                            <td>Configura opções do Git.</td>
+                            <td><code>git config --global user.name "Seu Nome"</code><br><code>git config --global user.email "seuemail@example.com"</code></td>
+                        </tr>
+                        <tr>
+                            <td>git reset</td>
+                            <td>Desfaz commits locais.</td>
+                            <td><code>git reset --hard &lt;hash-do-commit&gt;</code></td>
+                        </tr>
+                        <tr>
+                            <td>git remote</td>
+                            <td>Gerencia repositórios remotos.</td>
+                            <td><code>git remote add origin https://github.com/usuario/repo.git</code></td>
+                        </tr>
+                        <tr>
+                            <td>git fetch</td>
+                            <td>Busca mudanças de um repositório remoto.</td>
+                            <td><code>git fetch origin</code></td>
+                        </tr>
+                        <tr>
+                            <td>git show</td>
+                            <td>Exibe informações sobre qualquer objeto Git.</td>
+                            <td><code>git show &lt;hash-do-commit&gt;</code></td>
+                        </tr>
+                        <tr>
+                            <td>git help</td>
+                            <td>Exibe o manual do Git.</td>
+                            <td><code>git help</code></td>
+                        </tr>
+                        <tr>
+                            <td>git rebase</td>
+                            <td>Aplica commits de um branch a outro.</td>
+                            <td><code>git rebase nova-branch</code></td>
+                        </tr>
+                        <tr>
+                            <td>git blame</td>
+                            <td>Mostra quem modificou cada linha de um arquivo.</td>
+                            <td><code>git blame arquivo.txt</code></td>
+                        </tr>
+                        <tr>
+                            <td>git tag</td>
+                            <td>Marca pontos específicos na história do repositório.</td>
+                            <td><code>git tag -a v1.0 -m "Versão 1.0"</code></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h4>Observação</h4>
+                <dl>
+                    <dt>Esse é apenas um tutorial para iniciantes</dt>
+                    <dd>Para mais comandos e funcionalidades, acesse o site oficial do Git/Github.</dd>
+                </dl>
+
+                <p>Pratique <mark>comandos Git</mark> e explore a documentação detalhada disponível.</p>
+                <p>Para <small>usuários avançados</small>, explorar funcionalidades mais complexas pode ser útil.</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; Projetado por Iago Sachsida Teixeira R. Braga  2024.1.08.045.</p>
+        </div>
+    </footer>
+</body>
+</html>
